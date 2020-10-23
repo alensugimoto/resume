@@ -1,0 +1,368 @@
+\documentclass{article}
+
+% Document Formatting {{{0
+
+% define the primary color of this CV
+\newcommand{\primarycolor}{blue!75!green!50!black}
+
+% remove page numbering
+\usepackage{nopageno}
+% set font to Times
+\usepackage{mathptmx}
+% set page margins
+\usepackage[margin=1.35cm]{geometry}
+% package to customize section titles
+\usepackage[compact]{titlesec}
+% package to make compact bullets
+\usepackage{enumitem}
+% package to make clickable links
+\usepackage[hidelinks]{hyperref}
+% package to set width of table and use expanded columns (X)
+\usepackage{tabularx}
+% package to apply color to CV
+\usepackage{xcolor}
+% package to create progress bars
+\usepackage[width=1.8cm, linecolor=white, ticksheight=0ex, filledcolor=\primarycolor!60]{progressbar}
+
+% remove indentations and spacing between paragraphs
+\setlength{\parindent}{0em}
+\setlength{\parskip}{0em}
+% set the space between table columns
+\setlength{\tabcolsep}{18pt}
+
+% create environment for compact lists
+\newlist{compactitem}{itemize}{3} % 3 is max-depth
+\setlist[compactitem]{label=\textbullet, nosep, leftmargin=5.5mm}
+
+% customize the section command
+\titleformat{\section}
+    {\bfseries\Large\raggedright\color{\primarycolor}} % bold. large, left-aligned, colored
+    {} % no label
+    {0em} % no separation from label
+    {} % nothing before title
+    [\titlerule] % insert line after title
+
+% customize the subsection command
+\titleformat{\subsection}
+    {\raggedright} % left-aligned
+    {} % no label
+    {0em} % no separation from label
+    {\vspace{3pt}} % some space before title
+
+% command to print the name, location, and duration (#2, #3, #4 respectively) of an activity
+% with optional subtitle (#1)
+\newcommand{\datedsubsection}[4][]{
+    \subsection*{
+        \textbf{\large #2}, #3 \hfill #4
+    } % unnumbered subsection
+    \vspace{-4pt} % remove vertical space
+    #1 % optional subtitle
+}
+
+% command to print a subsection title and body (#1 and #2 respectively)
+\newcommand{\simplesubsection}[2]{
+    \subsection*{\textbf{#1}} % unnumbered subsection
+    \vspace{-4pt} % remove vertical space
+    #2 % body
+}
+
+% command to print name in heading
+\newcommand{\name}[1]{
+    \textcolor{\primarycolor}{\Huge{\textbf{#1}}}
+}
+
+% command to create two columns (#1 and #2), 
+% with left-aligned content but without left and right padding
+\newcommand{\tabularcv}[2]{
+    {\linespread{1.2} % line spacing in both columns
+    \vspace{10pt}
+    \begin{tabularx}
+          {\textwidth}
+          {@{}>{\raggedright\arraybackslash}p{4.4cm}
+              !{\color{\primarycolor}\vrule} % primary-colored separator
+              >{\raggedright\arraybackslash}X@{}}
+        \vspace{-10pt} #1 & \vspace{-10pt} #2
+    \end{tabularx}}
+}
+
+% command to print skill name and bar given name and number (#1 and #2)
+\newcommand{\skill}[2]{
+    #1 \hfill \progressbar{#2}
+}
+
+% 0}}}
+
+\begin{document}
+ 
+ % left-align the entire document
+ \raggedright
+ 
+ % Heading {{{0
+ 
+ \name{Alen Dimitrov Sugimoto}
+ 
+ % horizontal line spanning text width
+ \textcolor{\primarycolor}{\rule{\textwidth}{3pt}}
+ 
+ % make room for CV summary
+ \vspace{8pt}
+ 
+ % summary of CV
+ Detail-oriented undergraduate student with programming experience. 
+ Competent in problem-solving and collaboration. 
+ Eager to take on any challenge and grow in the field of computer science.
+ 
+ % 0}}}
+ 
+ \tabularcv{
+    
+    % Personal Info {{{1
+    
+    \section{PERSONAL INFO}
+    
+    \simplesubsection{Address}{
+
+        Via Trevano 73,
+        
+        6900 Lugano, Switzerland
+
+    }
+    
+    \simplesubsection{Phone}{
+
+        (078) 955-9930
+
+    }
+    
+    \simplesubsection{Email}{
+
+        \href{mailto:sugima@usi.ch}{sugima@usi.ch}
+
+    }
+    
+    \simplesubsection{LinkedIn}{
+
+        \href{https://www.linkedin.com/in/alensugimoto/}{linkedin.com/in/alensugimoto}
+
+    }
+    
+    \simplesubsection{GitHub}{
+
+        \href{https://github.com/alensugimoto/}{github.com/alensugimoto}
+
+    }
+    
+    \simplesubsection{Portfolio}{
+
+        \href{https://alensugimoto.github.io/}{alensugimoto.github.io}
+
+    }
+    
+    % 1}}}
+    
+    % Skills {{{1
+    
+    \section{SKILLS}
+    
+    \simplesubsection{\large Soft Skills}{
+    
+        Attention to detail
+        
+        Critical Thinking
+        
+        Flexibility
+        
+        Organization
+        
+        Persistence
+        
+        Problem-solving
+        
+        Teamwork
+    
+    }
+    
+    \simplesubsection{\large Languages}{
+    
+        \skill{Italian}{0.2} 
+        
+        \skill{Japanese}{0.2} 
+        
+        \skill{Spanish}{0.4}
+    
+    }
+    
+    \simplesubsection{\large Computer}{
+    
+        \skill{Java}{0.4} 
+        
+        \skill{Python}{0.2} 
+        
+        \skill{Visual Basic}{0.3} 
+        
+        \skill{MATLAB}{0.6} 
+        
+        \skill{CSS}{0.2} 
+        
+        \skill{Javascript}{0.3} 
+        
+        \skill{HTML}{0.3} 
+        
+        \skill{Flutter}{0.6} 
+        
+        \skill{Eclipse}{0.3}
+        
+        \skill{Visual Studio}{0.4}
+        
+        \skill{Android Studio}{0.6}
+        
+        \skill{Xcode}{0.4}
+    
+    }
+    
+    % 1}}}
+    
+ }{
+    
+    % Education {{{1
+    
+    \section{EDUCATION}
+    
+    % Undergrad {{{2
+    
+    \datedsubsection
+        [\textit{Informatics: Bachelor of Science}]
+        {Universit\`a della Svizzera italiana}
+        {Lugano, Switzerland}
+        {Sep 2020 -- Aug 2023}
+    
+    % 2}}}
+    
+    % High School {{{2
+    
+    \datedsubsection
+        [\textit{High School Diploma} 
+        \hfill 96.75\% (Gr.\ 10--12)]
+        {Semiahmoo Secondary School}
+        {Surrey, BC, Canada}
+        {Sep 2015 -- Jun 2020}
+    
+    \begin{compactitem}
+    
+    \item\textbf{Relevant Coursework}:
+    Computer Programming 11 and 12 (Visual Basic and Java);
+    IB Math 11 and 12 HL.
+    
+    \item\textbf{Honours/Awards}:
+    Award of Excellence in Chemistry 11, IB Math 11 HL, and Pre-Calculus 12;
+    Top Physics and Spanish 12 Student Award.
+    
+    \item\textbf{Scholarships}:
+    Cliff Annable Memorial Scholarship;
+    District/Authority Scholarship.
+    
+    \end{compactitem}
+    
+    % 2}}}
+    
+    % 1}}}
+    
+    % Projects {{{1
+    
+    \section{PROJECTS}
+    
+    % Math IA {{{2
+    
+    \datedsubsection{Math IA}
+                    {Semiahmoo Secondary School}
+                    {Nov 2019 -- Mar 2020}
+    
+    \begin{compactitem}
+    \item Helped my former baseball teammates become more efficient base runners by building a MATLAB function that finds the fastest path from home to second base.
+    \item Thoroughly analyzed the function by writing a 21-page academic paper explaining the final optimization method used.
+    \end{compactitem}
+    
+    % 2}}}
+    
+    % 1}}}
+    
+    % Professional Experience {{{1
+    
+    \section{PROFESSIONAL EXPERIENCE}
+    
+    % Lotus LED Lights {{{2
+    
+    \datedsubsection
+        [\textit{Mobile Application Developer}]
+        {Lotus LED Lights}
+        {Surrey, BC, Canada}
+        {Jun 2020 -- Sep 2020}
+    
+    \begin{compactitem}
+    \item Allowed Lotus LED Lights' employees and sales agents to navigate through their inventory by developing a Flutter app that turns tables into simple lists of data.
+    \item Improved the companies website by turning two PDF files into responsive HTML web pages for Lotus LED Lights' website.
+    \end{compactitem}
+    
+    % 2}}}
+    
+    % Other {{{2
+    
+    \subsection*{\textbf{Other Professional Experience}: Information Officer at Elections Canada, Warehouse Assistant at Lotus LED Lights.}
+    
+    % 2}}}
+    
+    % 1}}}
+    
+    % Leadership and Affiliations {{{1
+    
+    \section{LEADERSHIP \& AFFILIATIONS}
+    
+    % STEM Outreach {{{2
+    
+    \datedsubsection
+        [\textit{General Member}]
+        {STEM Outreach Program}
+        {Surrey, BC, Canada}
+        {Oct 2019 -- Mar 2020}
+    
+    \begin{compactitem}
+    \item Inspired around 15 elementary school students by introducing them to different STEM topics every week and leading them through related, fun activities.
+    \end{compactitem}
+    
+    % 2}}}
+    
+    % Baseball {{{2
+    
+    \datedsubsection
+        [\textit{Utility Baseball Player}]
+        {Tritons Baseball Organization}
+        {Surrey, BC, Canada}
+        {Sep 2016 -- Aug 2019}
+    
+    \begin{compactitem}
+    \item Improved fitness test scores and skillset every year by committing to team practices and baseball-related training.
+    \item Was a role model for teammates by balancing baseball with school, being punctual, and always working hard on the field.
+    \end{compactitem}
+    
+    % 2}}}
+    
+    % Code Blue {{{2
+    
+    \datedsubsection
+        [\textit{Police Officer Trainee}]
+        {Code Blue Program}
+        {Surrey, BC, Canada}
+        {Sep 2015 -- May 2019}
+    
+    \begin{compactitem}
+    \item Developed my communication and collaboration skills by training with fellow students under RCMP officers.
+    \item Learned that the body can do more than what one would expect by motivating myself and others through tough exercises.
+    \end{compactitem}
+    
+    % 2}}}
+    
+    % 1}}}
+    
+ }
+ 
+\end{document}
