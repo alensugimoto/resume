@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=latex 2020.9.22)  18 OCT 2020 20:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=latex 2020.9.22)  13 FEB 2021 20:19
 entering extended mode
  restricted \write18 enabled.
  Source specials enabled.
@@ -643,15 +643,15 @@ File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(38.41139pt, 537.47221pt, 38.41139pt)
-* v-part:(T,H,B)=(38.41139pt, 718.1472pt, 38.41139pt)
+* h-part:(L,W,R)=(32.72049pt, 548.85402pt, 32.72049pt)
+* v-part:(T,H,B)=(32.72049pt, 729.529pt, 32.72049pt)
 * \paperwidth=614.295pt
 * \paperheight=794.96999pt
-* \textwidth=537.47221pt
-* \textheight=718.1472pt
-* \oddsidemargin=-33.8586pt
-* \evensidemargin=-33.8586pt
-* \topmargin=-70.8586pt
+* \textwidth=548.85402pt
+* \textheight=729.529pt
+* \oddsidemargin=-39.5495pt
+* \evensidemargin=-39.5495pt
+* \topmargin=-76.5495pt
 * \headheight=12.0pt
 * \headsep=25.0pt
 * \topskip=10.0pt
@@ -698,22 +698,22 @@ LaTeX Info: Redefining \nameref on input line 95.
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd) [1
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 368.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 368.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 375.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 375.
  (./sugimoto.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 368.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 368.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 375.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 375.
 Package rerunfilecheck Info: File `sugimoto.out' has not changed.
 (rerunfilecheck)             Checksum: 3D20AD7CD3AB0B46B4C590E0FFC7DD5A;297.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 368.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 375.
  ) 
 Here is how much of TeX's memory you used:
  16599 strings out of 483184
  317491 string characters out of 5966318
- 734069 words of memory out of 5000000
+ 734526 words of memory out of 5000000
  31290 multiletter control sequences out of 15000+600000
  543353 words of font info for 48 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  68i,13n,64p,429b,792s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on sugimoto.dvi (1 page, 76856 bytes).
+Output written on sugimoto.dvi (1 page, 76988 bytes).
