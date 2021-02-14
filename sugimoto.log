@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=latex 2020.9.22)  14 FEB 2021 09:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=latex 2020.9.22)  14 FEB 2021 09:57
 entering extended mode
  restricted \write18 enabled.
  Source specials enabled.
@@ -643,15 +643,15 @@ File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(32.72049pt, 548.85402pt, 32.72049pt)
-* v-part:(T,H,B)=(32.72049pt, 729.529pt, 32.72049pt)
+* h-part:(L,W,R)=(42.67912pt, 528.93675pt, 42.67912pt)
+* v-part:(T,H,B)=(42.67912pt, 709.61174pt, 42.67912pt)
 * \paperwidth=614.295pt
 * \paperheight=794.96999pt
-* \textwidth=548.85402pt
-* \textheight=729.529pt
-* \oddsidemargin=-39.5495pt
-* \evensidemargin=-39.5495pt
-* \topmargin=-76.5495pt
+* \textwidth=528.93675pt
+* \textheight=709.61174pt
+* \oddsidemargin=-29.59087pt
+* \evensidemargin=-29.59087pt
+* \topmargin=-66.59087pt
 * \headheight=12.0pt
 * \headsep=25.0pt
 * \topskip=10.0pt
@@ -710,7 +710,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 369.
 Here is how much of TeX's memory you used:
  16599 strings out of 483184
  317491 string characters out of 5966318
- 744712 words of memory out of 5000000
+ 742727 words of memory out of 5000000
  31290 multiletter control sequences out of 15000+600000
  543353 words of font info for 48 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
